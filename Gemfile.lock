@@ -288,7 +288,7 @@ GEM
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
     shellany (0.0.1)
-    solargraph (0.51.1)
+    solargraph (0.51.2)
       backport (~> 1.2)
       benchmark
       bundler (~> 2.0)
@@ -381,7 +381,7 @@ DEPENDENCIES
   repl_type_completor (= 0.1.2)
   sassc-rails (= 2.1.2)
   selenium-webdriver (= 4.8.3)
-  solargraph (= 0.51.1)
+  solargraph (= 0.51.2)
   sprockets-rails (= 3.4.2)
   sqlite3 (= 1.6.1)
   stimulus-rails (= 1.2.1)
