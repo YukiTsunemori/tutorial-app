@@ -1,10 +1,14 @@
-    <h1>This is page coded by Ruby on Rails</h1>
-    <div class="header">
-        <p>Railsチュートリアル学習中なわけですが、今回は2週目となります。</p>
-    </div>
-    <div class="middle">
-        <p>今回はCodespacesではなく、ローカル環境で開発、Githubへpushの手順で開発しました。<br>
-            local PCとrailsチュートリアル推奨のRubyのバージョンが異なっており、まずは推奨のRuby3.2.6をrbenvコマンドで実行。<br>
-            本チュートリアルのみで動かしたかったので、rbenv localで使えるようにしました。            
-        </p>
-    </div>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+                      "https://rubyonrails.org/" %>

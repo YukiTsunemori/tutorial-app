@@ -1,4 +1,13 @@
 /*
+次の行は、app/assets/stylesheetsディレクトリ（サブディレクトリを含む）中のすべてのCSSファイルをアプリケーションCSSに含めるよう指示しています。
+*= require_tree .
+
+次の行は、CSSの読み込みシーケンスの中で、application.css自身もその対象に含めるよう指示しています。
+*= require_self
+*/
+/* 上の2行はSprocketsが適切なファイルを読み込むために使われます。 */
+
+/*
  * This is a manifest file that'll be compiled into application.css.
  *
  * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
