@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "users/new"
   # Defines the root path route ("/")
   # => (/)スラッシュはホームを表示。それがrootに対応する。
   # root "posts#index"
@@ -6,6 +7,7 @@ Rails.application.routes.draw do
   get "/help",    to: "static_pages#help"
   get "/about",   to: "static_pages#about"
   get "/contact", to: "static_pages#contact"
+  get "signup", to: "users#new"
 
 
   get "up" => "rails/health#show", as: :rails_health_check
