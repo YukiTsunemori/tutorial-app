@@ -2,9 +2,10 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.6"
-gem "bootstrap-sass", "3.4.1"
+gem "bootstrap-sass",  "3.4.1"
 gem "brakeman"
 gem "rails",           "7.0.4.3"
+gem "bcrypt",          "3.1.18"
 gem "sassc-rails",     "2.1.2"
 gem "sprockets-rails", "3.4.2"
 gem "importmap-rails", "1.1.5"
