@@ -14,9 +14,15 @@
     <%#　パーシャルを使ってヘッダーを論理的に分ける %>
     <%= render "layouts/header" %>
     <div class="container">
+      <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+
       <%= yield %>
     </div>
     <%= render "layouts/footer" %>
+    <div class="container">
     <%= debug(params) if Rails.env.development? %>
+    </div>
   </body>
 </html>
