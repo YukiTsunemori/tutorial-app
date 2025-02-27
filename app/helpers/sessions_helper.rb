@@ -18,4 +18,10 @@ module SessionsHelper
     # current_userがnilならtrueが返るので、falseを返すようにする => 否定演算子の!
     # current_userがnil出ない場合は、falseが返るので「!」でtrueが返るようにする。
   end
+
+  # 現在のユーザをログアウトする
+  def log_out
+    reset_session
+    @current_user = nil #安全のため
+  end
 end
