@@ -22,7 +22,5 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    log_out # ヘルパーファイルでメソッドを定義しているので、ここで使用できる
-    redirect_to root_url, status: :see_other
   end
 end
